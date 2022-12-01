@@ -1,0 +1,90 @@
+@import "./colors.scss";
+
+@mixin textBaseMedium($color) {
+    color: $color;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@mixin textBaseSemi($color) {
+    color: $color;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@mixin textBaseRegular($color) {
+    color: $color;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@mixin textBaseBold($color) {
+    color: $color;
+    font-weight: 700;
+}
+
+@mixin textBaseSemi($color) {
+    color: $color;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@mixin textLgRegular($color) {
+    color: $color;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+@mixin textLgSemi($color) {
+    color: $color;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@mixin textXlMedium($color) {
+    color: $color;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@mixin text4XlBold($color) {
+    color: $color;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+@mixin text4XlSemi($color) {
+    color: $color;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+@mixin textXlBold($color) {
+    color: $color;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@mixin text4XlExtraBold($color) {
+    color: $color;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+@mixin textSmRegular($color) {
+    font-size: 14px;
+    font-weight: 400;
+    color: $color;
+}
+
+@mixin textSmMedium($color) {
+    font-size: 14px;
+    font-weight: 500;
+    color: $color;
+}
+
+@mixin text3XlSemi($color) {
+    font-size: 30px;
+    font-weight: 600;
+    color: $color;
+}

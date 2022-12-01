@@ -1,0 +1,153 @@
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/mixins.scss";
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        width: 80%;
+        padding: 64px 0;
+        border-top: 1px solid rgba(26, 26, 26, 0.2);
+        display: flex;
+        justify-content: space-between;
+
+        .column {
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            &__logo {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                span {
+                    @include textBaseBold($black);
+                }
+            }
+
+            &__company {
+                @include textBaseMedium($gray);
+            }
+
+            &__title {
+                @include textSmMedium($gray);
+            }
+
+            &__link {
+                cursor: pointer;
+                @include textBaseMedium($black);
+            }
+
+            &__img {
+                width: 60%;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.mobile-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        width: 93%;
+        padding: 32px 0px 32px 0px;
+        border-top: 1px solid rgba(26, 26, 26, 0.2);
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__columns {
+        display: flex;
+
+        width: 100%;
+        height: 400px;
+        flex-wrap: wrap;
+
+        .column {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            &__title {
+                @include textSmMedium($gray);
+            }
+
+            &__link {
+                @include textBaseMedium($black);
+                line-height: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__rows {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &__title {
+            @include textSmMedium($gray);
+        }
+
+        .download-btn {
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 100%;
+            height: 44px;
+            border: none;
+            color: $white;
+            background-color: $black;
+            border-radius: 8px;
+            cursor: pointer;
+            &__text {
+                width: 95px;
+                @include textBaseBold($white);
+                span {
+                    line-height: 10px;
+                    font-size: 10px;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        &__company {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 52px;
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                span {
+                    @include textBaseBold($black);
+                }
+            }
+
+            .company {
+                @include textBaseMedium($gray);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .footer {
+        &__wrapper {
+            width: 90%;
+        }
+    }
+}
